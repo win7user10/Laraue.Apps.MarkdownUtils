@@ -2,11 +2,11 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B45F5686-688E-4A5C-9AD4-B58C7F758A2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laraue.Apps.MarkdownTranspiler.WebApi", "src\Laraue.Apps.MarkdownTranspiler.WebApi\Laraue.Apps.MarkdownTranspiler.WebApi.csproj", "{C50BA1F9-58A4-475B-81A6-8E0967101E43}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laraue.Apps.MarkdownUtils.WebApiHost", "src\Laraue.Apps.MarkdownUtils.WebApiHost\Laraue.Apps.MarkdownUtils.WebApiHost.csproj", "{C50BA1F9-58A4-475B-81A6-8E0967101E43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laraue.Apps.MarkdownTranspiler.Contracts", "src\Laraue.Apps.MarkdownTranspiler.Contracts\Laraue.Apps.MarkdownTranspiler.Contracts.csproj", "{9393854F-6258-480D-B3AC-74BB2AFA11B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laraue.Apps.MarkdownUtils.Contracts", "src\Laraue.Apps.MarkdownUtils.Contracts\Laraue.Apps.MarkdownUtils.Contracts.csproj", "{9393854F-6258-480D-B3AC-74BB2AFA11B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laraue.Apps.MarkdownTranspiler.Services", "src\Laraue.Apps.MarkdownTranspiler.Services\Laraue.Apps.MarkdownTranspiler.Services.csproj", "{CBA1214F-A571-489D-9A64-222AB37AFA6B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laraue.Apps.MarkdownUtils.Services", "src\Laraue.Apps.MarkdownUtils.Services\Laraue.Apps.MarkdownUtils.Services.csproj", "{CBA1214F-A571-489D-9A64-222AB37AFA6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

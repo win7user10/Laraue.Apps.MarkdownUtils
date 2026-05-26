@@ -1,8 +1,8 @@
-﻿using Laraue.Apps.MarkdownTranspiler.Contracts;
+﻿using Laraue.Apps.MarkdownUtils.Contracts;
 using Laraue.Interpreter.Common;
 using ITranspiler = Laraue.Interpreter.Markdown.IMarkdownTranspiler;
 
-namespace Laraue.Apps.MarkdownTranspiler.Services;
+namespace Laraue.Apps.MarkdownUtils.Services;
 
 public interface IMarkdownTranspilerService
 {

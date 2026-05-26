@@ -1,12 +1,12 @@
-﻿using Laraue.Apps.MarkdownTranspiler.Contracts;
-using Laraue.Apps.MarkdownTranspiler.Services;
+﻿using Laraue.Apps.MarkdownUtils.Contracts;
+using Laraue.Apps.MarkdownUtils.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Laraue.Apps.MarkdownTranspiler.WebApi.Controllers;
 
 [ApiController]
-[Route("api/markdown")]
-public class MarkdownController(IMarkdownTranspilerService transpilerService) : ControllerBase
+[Route("api/markdown-transpiler")]
+public class MarkdownTranspilerController(IMarkdownTranspilerService transpilerService) : ControllerBase
 {
     [HttpPost("transpile")]
     public MarkdownTranspileResponse Transpile([FromBody] MarkdownTranspileRequest request)

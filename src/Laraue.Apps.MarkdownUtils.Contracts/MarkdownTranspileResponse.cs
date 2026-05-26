@@ -1,4 +1,4 @@
-﻿namespace Laraue.Apps.MarkdownTranspiler.Contracts;
+﻿namespace Laraue.Apps.MarkdownUtils.Contracts;
 
 public class MarkdownTranspileResponse
 { 

@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   
   <ItemGroup>
-    <ProjectReference Include="..\Laraue.Apps.MarkdownTranspiler.Contracts\Laraue.Apps.MarkdownTranspiler.Contracts.csproj" />
+    <ProjectReference Include="..\Laraue.Apps.MarkdownUtils.Contracts\Laraue.Apps.MarkdownUtils.Contracts.csproj" />
   </ItemGroup>
 
   <ItemGroup>

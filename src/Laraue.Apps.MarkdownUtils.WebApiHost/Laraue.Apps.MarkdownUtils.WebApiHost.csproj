@@ -4,6 +4,7 @@
         <TargetFramework>net10.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>Laraue.Apps.MarkdownTranspiler.WebApi</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -12,7 +13,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Laraue.Apps.MarkdownTranspiler.Services\Laraue.Apps.MarkdownTranspiler.Services.csproj" />
+      <ProjectReference Include="..\Laraue.Apps.MarkdownUtils.Services\Laraue.Apps.MarkdownUtils.Services.csproj" />
     </ItemGroup>
 
 </Project>
