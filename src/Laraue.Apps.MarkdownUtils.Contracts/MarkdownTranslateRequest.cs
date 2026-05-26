@@ -4,7 +4,7 @@ namespace Laraue.Apps.MarkdownUtils.Contracts;
 
 public class MarkdownTranslateRequest
 {
-    [MaxLength(50000)]
+    [MaxLength(Constraints.MaxTranslationInput)]
     public required string Content { get; init; }
     
     [MinLength(2)]
