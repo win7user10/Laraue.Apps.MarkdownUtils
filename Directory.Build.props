@@ -17,5 +17,6 @@
   <PropertyGroup>
     <LaraueMarkdownInterpreterVersion>0.1.9</LaraueMarkdownInterpreterVersion>
     <ScalarVersion>2.11.0</ScalarVersion>
+    <MicrosoftExtensionsVersion>10.0.8</MicrosoftExtensionsVersion>
   </PropertyGroup>
 </Project>
