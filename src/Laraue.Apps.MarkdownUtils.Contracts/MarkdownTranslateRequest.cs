@@ -4,7 +4,7 @@ namespace Laraue.Apps.MarkdownUtils.Contracts;
 
 public class MarkdownTranslateRequest
 {
-    [MaxLength(Constraints.MaxTranslationInput)]
+    [MaxLength(Constraints.MaxTranslationInput, ErrorMessage = "Free version allow to translate no more than 10 000 symbols")]
     public required string Content { get; init; }
     
     [MinLength(2)]
