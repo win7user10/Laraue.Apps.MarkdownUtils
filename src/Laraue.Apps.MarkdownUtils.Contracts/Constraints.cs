@@ -2,6 +2,6 @@
 
 public class Constraints
 {
-    public const int MaxTranslationInput = 10000;
-    public const int MaxTranslationOutput = 15000;
+    public const int MaxFreeTranslationInput = 7_000;
+    public const int MaxFreeTranslationOutput = 12_000;
 }

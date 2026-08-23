@@ -30,7 +30,7 @@ Keep original formatting layout";
         
         var response = await openAiClient.ChatCompletion(new ChatCompletionRequest
         {
-            MaxTokens = Constraints.MaxTranslationOutput,
+            MaxTokens = Constraints.MaxFreeTranslationOutput,
             Messages =
             [
                 new Message { Role = "system", Content = prompt },
