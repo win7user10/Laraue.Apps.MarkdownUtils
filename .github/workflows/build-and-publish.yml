@@ -27,8 +27,12 @@ jobs:
       
     - name: Run all tests
       run: dotnet test -c Release --no-build
-    
-    - name: Upload
+
+    - name: Pack Web API Host
+      if: github.ref == 'refs/heads/main'
+      run: tar -czf webapi-host.tar.gz -C src/Laraue.Apps.MarkdownUtils.WebApiHost/bin/Release/net10.0 .
+
+    - name: Upload Web API Host
       if: github.ref == 'refs/heads/main'
       uses: marcodallasanta/ssh-scp-deploy@v1.2.0
       with:
@@ -36,6 +40,8 @@ jobs:
        port: ${{ secrets.SSH_PORT }} # 22
        user: ${{ secrets.SSH_USER }} # "user"
        password: ${{ secrets.SSH_PASSWORD }} # "password"
-       local: src/Laraue.Apps.MarkdownUtils.WebApiHost/bin/Release/net10.0/*
+       local: webapi-host.tar.gz
        remote: "/home/laraue/markdown-utils-web-api-host"
-       post_upload: echo "Uploaded successfully"
+       post_upload:
+        cd /home/laraue/markdown-utils-web-api-host && find . -mindepth 1 ! -name webapi-host.tar.gz -delete &&
+        tar -xzf webapi-host.tar.gz && rm webapi-host.tar.gz
