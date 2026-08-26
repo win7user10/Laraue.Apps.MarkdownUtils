@@ -1,6 +1,7 @@
 using Laraue.Apps.MarkdownUtils.Services;
 using Laraue.Core.Exceptions;
 using Microsoft.Extensions.Options;
+using OpenTelemetry.Metrics;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -30,6 +31,14 @@ builder.Services.AddHttpClient<IOpenAiClient, OpenAiClient>((services, client) =
     client.DefaultRequestHeaders.Add("Authorization", $"Bearer {options.Value.Token}");
 });
 
+builder.Services
+    .AddOpenTelemetry()
+    .WithMetrics(metrics => metrics
+        .AddAspNetCoreInstrumentation()
+        .AddHttpClientInstrumentation()
+        .AddRuntimeInstrumentation()
+        .AddPrometheusExporter());
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -57,5 +66,6 @@ app.UseCors(corsPolicyBuilder =>
 
 app.UseMiddleware<ExceptionHandleMiddleware>();
 app.MapHealthChecks("/_health");
+app.MapPrometheusScrapingEndpoint("/_metrics");
 app.MapControllers();
 app.Run();
