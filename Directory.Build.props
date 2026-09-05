@@ -15,7 +15,7 @@
   </PropertyGroup>
   
   <PropertyGroup>
-    <LaraueMarkdownInterpreterVersion>0.1.10</LaraueMarkdownInterpreterVersion>
+    <LaraueMarkdownInterpreterVersion>0.2.0</LaraueMarkdownInterpreterVersion>
     <ScalarVersion>2.11.0</ScalarVersion>
     <MicrosoftExtensionsVersion>10.0.8</MicrosoftExtensionsVersion>
     <OpenTelemetryExtensionsHostingVersion>1.18.0</OpenTelemetryExtensionsHostingVersion>
